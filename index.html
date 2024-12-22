@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Clicker Mini App</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="stats">
+                <div class="score-container">
+                    <h2>🍪 Cookies: <span id="score">0</span></h2>
+                    <p>Per Click: <span id="perClick">1</span></p>
+                    <p>Per Second: <span id="perSecond">0</span></p>
+                </div>
+                <div class="achievements">
+                    <h3>Achievements: <span id="achievementCount">0</span></h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="click-area">
+            <button id="clickButton">
+                <img src="https://em-content.zobj.net/source/microsoft-teams/337/cookie_1f36a.png" alt="Cookie" class="cookie-image">
+            </button>
+        </div>
+
+        <div class="upgrades">
+            <h2>🛍️ Shop</h2>
+            <div class="upgrade-grid">
+                <div class="upgrade-item">
+                    <button id="upgradeClick">
+                        🖱️ Better Click
+                        <div class="cost">Cost: <span id="upgradeClickCost">10</span></div>
+                        <div class="description">Double click power</div>
+                    </button>
+                </div>
+                <div class="upgrade-item">
+                    <button id="buyAutoClicker">
+                        🤖 Auto Clicker
+                        <div class="cost">Cost: <span id="autoClickerCost">50</span></div>
+                        <div class="description">+1 cookie per second</div>
+                    </button>
+                </div>
+                <div class="upgrade-item">
+                    <button id="buyGrandma">
+                        👵 Grandma
+                        <div class="cost">Cost: <span id="grandmaCost">100</span></div>
+                        <div class="description">+5 cookies per second</div>
+                    </button>
+                </div>
+                <div class="upgrade-item">
+                    <button id="buyFactory">
+                        🏭 Factory
+                        <div class="cost">Cost: <span id="factoryCost">500</span></div>
+                        <div class="description">+25 cookies per second</div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="achievementPopup" class="achievement-popup">
+            <span id="achievementText"></span>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
